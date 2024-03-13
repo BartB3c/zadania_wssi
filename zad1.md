@@ -29,4 +29,7 @@
 - dyskusja naukowa - nie, specjalistyczne tematy w większości przypadków wykraczają poza zasięg programu
 - odpowiadanie na pytania klientów w telefonicznej infolinii - nie, przy nietypowych problemach program może nie udzielić poprawnej 
   odpowiedzi
-- 
+- odpowiadanie na pytania klienktów w internetowej infolinii
+
+# Zadanie 4
+1. 
