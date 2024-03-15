@@ -32,7 +32,8 @@
 - odpowiadanie na pytania klienktów w internetowej infolinii
 
 # Zadanie 4
-1. Bot udający człowieka:
+1. Porównanie botów:
+   Bot udający człowieka:
    - stara się jak najwierniej odzwierciedlić interakcje z człowiekiem
    - odpowiedzi potrafią być złożone, aby przypominały ludzką rozmowę
    - jest przeznaczony do symulowania rozmowy z człowiekiem w celu np. trenowania danego modelu językowego
