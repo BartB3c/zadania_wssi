@@ -32,4 +32,12 @@
 - odpowiadanie na pytania klienktów w internetowej infolinii
 
 # Zadanie 4
-1. 
+1. Bot udający człowieka:
+   - stara się jak najwierniej odzwierciedlić interakcje z człowiekiem
+   - odpowiedzi potrafią być złożone, aby przypominały ludzką rozmowę
+   - jest przeznaczony do symulowania rozmowy z człowiekiem w celu np. trenowania danego modelu językowego
+   Bot asystent, służący:
+   - został zaprogramowany aby dostarczyć konkretnych informacji
+   - odpowiedzi są raczej zwięzłe i ograniczone do konkretnych zagadnień
+   - ma zastosowanie w automatycznej obsłudze klienkta, lub dostarczaniu informacji, pomaga zautomatyzować i ułatwić powtarzalne procesy
+   
