@@ -68,21 +68,34 @@ sobie z prostymi pytaniami
    - ma zastosowanie w automatycznej obsłudze klienkta, lub dostarczaniu informacji, pomaga zautomatyzować i ułatwić powtarzalne procesy
 
 2.
-   **Bot udający człowieka:**
+   **Bot udający człowieka:** (chatGPT)
   a) opowiada żarty
   b) przytacza moje wypowiedzi oraz wypowiedzi wybranej znanej osoby
-  c) 
+  c) nawiązuje do słów kluczowych
+  d) raczej nie gubi się nawet w przypadku wielu pytań
+  e) sekwencyjne powtarzanie zdarza się przy złożonych pytaniach lub zagadnieniach
+  f) czasami zadaje pytania o szczegóły zagadnienia, aby przygotować lepszą odpowiedź
+  g) zdarzają mu się odpowiedzi wymijające, jednak znacznie rzadziej niż u bota asystenta
+  h) raczej nie zmienia tematu rozmowy
+  i) nie ma problemu z utrzymaniem wątku
+   
 
    **Bot asystent:** (chatbot.pl)
    a) jest w stanie opowiedzieć żart
    b) nie rozumie prośby o przytoczenie cytatów znanej osoby
    c) nie nawiązuje do słów kluczowych
    d) gubi się przy nietypowych dla danego modelu pytaniach
-   e) zdarza mu się powtarzać odpowiedzi
-   f) nie rozumie pytań powstających z moich wypowiedzi
+   e) zdarza mu się powtarzać odpowiedzi już przy prostych konwersacjach
+   f) nie zadaje pytań powstających z moich wypowiedzi
    g) odpowiada wymijająco lub prosi o zadanie pytania inaczej
    h) nie koniecznie zmienia temat rozmowy
-   i) do póki pytania są proste i zadane w przewidziany przez bota sposób, raczej utrzymuje wątek
+   i) do póki pytania są proste i zadane w przewidziany przez bota sposób - raczej utrzymuje wątek, natomiast w           przypadku nietypowego pytania potrafi się zgubić
+
+3. Bot udający człowieka jest bardziej zaawansowany niż bot asystent, dzięki czemu jest on w stanie zasymulować
+   rozmowę z człowiekiem. Nie idealnie, ale radzi sobie z nietypowymi pytaniami. Pamięta wątki i kontekst rozmowy. 
+   Bot asystent przypomina bardziej program, posiadający zaprogramowane odpowiedzi na dany zbiór pytań, musimy
+   zadawać pytania w odpowiedni sposób, aby wymiana wypowiedzi przypominała rozmowę.
+4. Rozmowa dwóch botów po krótkiej chwili doprowadzi do zapętlenia, ponieważ w zw
   
    
    
