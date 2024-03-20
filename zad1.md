@@ -34,6 +34,16 @@ sobie z prostymi pytaniami
 # Zadanie 2
 **streszczenie tekstu** - jest w zakresie sztucznej inteligencji, jest w stanie odnaleźć najważniejsze informacje
 **tłumaczenie tekstu** - nie mieszczą się w zakresie sztucznej inteligencji, ponieważ język nie jest sztywnym zbiorem słów i program    nie będzie w stanie wyłapać kontekstu w wielu przypadkach
+**klasyfikacja tekstu do kategorii tematycznych** - mieści się w zakresie AI, klasyfikacjq następuje po słowach kluczach
+**odpowiadanie na proste pytania w języku naturalnym** - AI dobrze radzi sobie z prostymi pytaniami, mieści się to w jej zakresie 
+**rozwiązywanie układów równań** - nie mieści się w zakresie AI, nie mozemy byc pewni poprawnego wyniku działań arytmetycznych 
+**układanie rozkładów jazdy** - mieści sie w zakresie AI, przy odpowiedniej ilości dostarczonych danych jest w stanie ułożyć poprawny rozkład
+**rozwiązywanie równań liniowych** - podobnie jak w przypadku układów równań, program poda poprawny sposób rozwiązanie, ale wynik może być nieprawidłowy
+**symboliczne obliczanie pochodnych**- tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych
+
+**symboliczne całkowanie** - tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych
+
+**kierowanie samochodem** - nie mieści się w zakresie AI, czasami jest potrzeba interwencji człowieka w przypadku błedu programu, którego konsekwencją może być np. wypadek
 
 # Zadanie 3
 **rozmowa towarzyska** - tak, jesteśmy w stanie przeprowadzić z chatem luźną rozmowę towarzyską
