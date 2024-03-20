@@ -95,7 +95,8 @@ sobie z prostymi pytaniami
    rozmowę z człowiekiem. Nie idealnie, ale radzi sobie z nietypowymi pytaniami. Pamięta wątki i kontekst rozmowy. 
    Bot asystent przypomina bardziej program, posiadający zaprogramowane odpowiedzi na dany zbiór pytań, musimy
    zadawać pytania w odpowiedni sposób, aby wymiana wypowiedzi przypominała rozmowę.
-4. Rozmowa dwóch botów po krótkiej chwili doprowadzi do zapętlenia, ponieważ w zw
+4. Rozmowa dwóch botów po krótkiej chwili doprowadzi do zapętlenia. Model AI nie rozpocznie nowego wątku np.          zadając losowe pytanie nie związane z obecnym kontekstem.
+5. Bot po próbie zdenerwowania go np. przez obrazę czasami odpowiada przytykiem w naszą stronę, sarkazmem.            Niekiedy chce zmienić temat.
   
    
    
