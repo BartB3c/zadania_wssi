@@ -1,18 +1,32 @@
 # Zadanie 1
 **wypełnianie deklaracji PIT** - istnieją programy, które wypełniają deklaracje podatkowe na podstawie dostępnych danych
+
 **streszczanie tekstu** - nie wymaga inteligencji człowieka, ponieważ obecne modele są w stanie rozpoznać kluczowe elementy w tekście i uprościć go
+
 **tłumaczenie tekstu** - w większości przypadków nie wymagają, jeśli tekst jest napisany językiem potocznym
+
 **klasyfikacja tekstu do kategorii tematycznych** - nie wymagają, jeśli tekst jest typowym przykładem jakiejś popularnej kategorii, w przypadku bardziej niszowego tekstu przydatna jest ingerencja człowieka
+
 **odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim)** - nie wymaga inteligencji człowieka, obecne dobrze radzą sobie z prostymi pytaniami
+
 **układanie rozkładu jazdy transportu miejskiego** - nie jest wymagana inteligencja człowieka, ponieważ jesteśmy w stanie napisać program który przy odpowiedniej ilości danych ułożyć taki rozkład
+
 **programowanie (pisanie programów komputerowych)** - inteligencja człowieka jest potrzebna w dużej ilości przypadków, ponieważ programy generowane przez sztuczną inteligencję najczęściej działają dobrze dla oczywistych przypadków, potrzebują korekt 
+
 **"programowanie" kanałów telewizyjnych** - raczej nie jest potrzebna, ewentualnie do wprowadzenia niektórych informacji oraz konfiguracji, sam proces programowania odbywa się najczęściej automatycznie
+
 **testowanie oprogramowania** - jeśli program rozwiązuje popularny problem, jest w stanie przewidzieć jakie testy powinien ułożyć przez dużą ilość napisanych wcześniej typowych testów, jeśli program jest nietypowy danych może nie wystarczyć do napisania odpowiedniego testu
+
 **komponowanie muzyki** - inteligencja człowieka jest potrzebna jeśli chcemy uzyskać nietypowy efekt stylistyczny, rzadko spotykany w popularnych utworach, na których model AI mógł się przeszkolić
+
 **rozwiązywanie układów równań** - AI jest w stanie znaleźć poprawny sposób na rozwiązanie układu równań, jednak nie jesteśmy w stanie przewidzieć czy wynik operacji arytmetycznych będzie poprawny, inteligencja człowieka jest potrzebna do kontroli poprawności wyniku
+
 **symboliczne obliczanie pochodnych** - tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych 
+
 **symboliczne całkowanie funkcji** -  tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych  
+
 **kierowanie samochodem** - techniczne i stałe aspekty jazdy są w stanie być obsługiwane przez sztuczną inteligencję, nietypowe sytuacje mogą wymagać abstrakcyjnego podejścia człowieka 
+
 
 # Zadanie 2
 **streszczenie tekstu** - jest w zakresie AI, jest w stanie odnaleźć najważniejsze informacje
