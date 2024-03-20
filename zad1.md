@@ -52,10 +52,9 @@ sobie z prostymi pytaniami
 
 **dyskusja naukowa** - nie, specjalistyczne tematy w większości przypadków wykraczają poza zasięg programu
 
-**odpowiadanie na pytania klientów w telefonicznej infolinii** - nie, przy nietypowych problemach program może nie udzielić poprawnej 
-  odpowiedzi
+**odpowiadanie na pytania klientów w telefonicznej infolinii** - raczej nie, klient dzwoniąc na telefoniczną infolinię oczekuje rozmowy z prawdziwym człowiekiem 
   
-**odpowiadanie na pytania klienktów w internetowej infolinii** -
+**odpowiadanie na pytania klienktów w internetowej infolinii** - raczej tak, klienci wybierający tę formę pomocy często oczekują szybkiej i konkretnej odpowiedzi
 
 # Zadanie 4
 1. **Bot udający człowieka:**
@@ -67,5 +66,23 @@ sobie z prostymi pytaniami
    - został zaprogramowany aby dostarczyć konkretnych informacji
    - odpowiedzi są raczej zwięzłe i ograniczone do konkretnych zagadnień
    - ma zastosowanie w automatycznej obsłudze klienkta, lub dostarczaniu informacji, pomaga zautomatyzować i ułatwić powtarzalne procesy
-2. 
+
+2.
+   **Bot udający człowieka:**
+  a) opowiada żarty
+  b) przytacza moje wypowiedzi oraz wypowiedzi wybranej znanej osoby
+  c) 
+
+   **Bot asystent:** (chatbot.pl)
+   a) jest w stanie opowiedzieć żart
+   b) nie rozumie prośby o przytoczenie cytatów znanej osoby
+   c) nie nawiązuje do słów kluczowych
+   d) gubi się przy nietypowych dla danego modelu pytaniach
+   e) zdarza mu się powtarzać odpowiedzi
+   f) nie rozumie pytań powstających z moich wypowiedzi
+   g) odpowiada wymijająco lub prosi o zadanie pytania inaczej
+   h) nie koniecznie zmienia temat rozmowy
+   i) do póki pytania są proste i zadane w przewidziany przez bota sposób, raczej utrzymuje wątek
+  
+   
    
