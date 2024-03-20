@@ -30,22 +30,37 @@
 
 # Zadanie 2
 **streszczenie tekstu** - jest w zakresie AI, jest w stanie odnaleźć najważniejsze informacje
+
 **tłumaczenie tekstu** - jest w zakresie AI, jeśli tekst jest stosunkowo prosty
+
 **klasyfikacja tekstu do kategorii tematycznych** - mieści się w zakresie AI, klasyfikacjq następuje po słowach kluczach
+
 **odpowiadanie na proste pytania w języku naturalnym** - AI dobrze radzi sobie z prostymi pytaniami, mieści się to w jej zakresie 
+
 **rozwiązywanie układów równań** - nie mieści się w zakresie AI, nie możemy byc pewni poprawnego wyniku działań arytmetycznych 
+
 **układanie rozkładów jazdy** - mieści sie w zakresie AI, przy odpowiedniej ilości dostarczonych danych jest w stanie ułożyć poprawny rozkład
+
 **rozwiązywanie równań liniowych** - mieści się, podobnie jak w przypadku układów równań, program poda poprawny sposób rozwiązania, ale wynik może być nieprawidłowy
+
 **symboliczne obliczanie pochodnych**- mieści się, jednak tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych
+
 **symboliczne całkowanie** - mieści się, tak samo jak z układem równań, może wystąpić błąd w operacjach arytmetycznych
+
 **kierowanie samochodem** - nie mieści się w zakresie AI, czasami jest potrzeba interwencji człowieka w przypadku błedu programu, którego konsekwencją może być np. wypadek. 
+
 
 # Zadanie 3
 **rozmowa towarzyska** - tak, jesteśmy w stanie przeprowadzić z chatem luźną rozmowę towarzyską
+
 **dyskusja polityczna** - tak, jednak problemem może być brak wiedzy bota o obecnej sytuacji politycznej
+
 **dyskusja naukowa** - tak, do pewnego stopnia, jeśli nie będziemy wchodzili zbyt "głęboko" w niektóre zagadnienia
+
 **odpowiadanie na pytania klientów w telefonicznej infolinii** - raczej nie, klient dzwoniąc na telefoniczną infolinię oczekuje rozmowy z prawdziwym człowiekiem, ponieważ czują że lepieij go zrozumie niż maszyna
+
 **odpowiadanie na pytania klienktów w internetowej infolinii** - raczej tak, klienci wybierający tę formę pomocy często oczekują szybkiej i konkretnej odpowiedzi oraz mają jasno sprecyzowane pytanie
+
 
 # Zadanie 4
 1. **Bot udający człowieka:**
