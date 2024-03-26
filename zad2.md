@@ -41,4 +41,8 @@ F - y jest szwagrem x
 
 G - x i y są kazirodztwem
 
+# Zad 2
+
+
+
 
