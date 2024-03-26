@@ -1,3 +1,9 @@
+# Ćwieczenie:
+
+
+
+
+
 # Zad 1
 
 Zad 1.1
