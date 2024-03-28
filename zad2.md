@@ -134,7 +134,6 @@ dziadek_od_strony_matki(X, Y) :-
     ojciec(X, Z),
     matka(Z, Y).
    
-
 dziadek(X, Y) :- 
     ojciec(X, Z),
     rodzic(Z,Y).
@@ -146,6 +145,15 @@ babcia(X, Y) :-
 wnuczka(X, Y) :-
     kobieta(Y),
     (dziadek(X,Y) ; babcia(X,Y)).
+
+przodek_do2pokolenia_wstecz(X, Y) :-
+    rodzic(X, Z),
+    rodzic(Z, Y),
+
+przodek_do3pokolenia_wstecz(X, Y) :-
+    rodzic(X, Z),
+    przodek_do2pokolenia_wstecz(Z, Y).
+
 
 
 
