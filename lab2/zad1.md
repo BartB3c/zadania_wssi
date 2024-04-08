@@ -10,4 +10,4 @@ E - x i y są przybranym rodzeństwem
 
 F - y jest szwagrem x
 
-G - x i y to rodzeństwo oraz x jest wujkiem/ciocią y (kazirodztwo)
+G - x i y to rodzeństwo oraz x jest wujkiem/ciocią y 
