@@ -69,22 +69,22 @@ kuzyn(X,Y) :-
     rodzic(Z,X),
     rodzic(W,Y),
     Z \= W,
-    (dziadek_albo_babcia(D, Z), dziadek_albo_babcia(D, W)).
+    (dziadek_albo_babcia(D, Z), dziadek_albo_babcia(D,W)).
 
 %wnuk_albo_wnuczka(X,Y) :-
 %    dziadek_albo_babcia(Y,X).
 
-wspoldziadkowie(X, Y) :-
+wspoldziadkowie(X,Y) :-
     dziadek_albo_babcia(X,A),
     dziadek_albo_babcia(Y,A).
 
-przybrane_rodzenstwo(X, Y) :-
+przybrane_rodzenstwo(X,Y) :-
     rodzic(Z,X),
     rodzic(Z,Y),
-    \+ (rodzic(W, X), rodzic(W,Y)),
+    \+ (rodzic(W,X), rodzic(W,Y)),
     B \= A.
 
-przybrany_rodzic(Y, X) :-
+przybrany_rodzic(Y,X) :-
     rodzic(W,X),
     rodzic(W,Z),
     rodzic(Y,Z),
