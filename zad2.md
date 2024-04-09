@@ -5,13 +5,10 @@ lubi(pawel, krzysztof).
 lubi(jan, bartek).
 lubi(bartek, jan).
 
-
 mezczyzna(jan).
 kobieta(karolina).
 mezczyzna(bartek).
 mezczyzna(krzysztof).
-
-
 
 przyjazn(X, Y) :- 
     lubi(X,Y),
@@ -29,19 +26,16 @@ loves(X, Y) :-
     przyjazn(X, Y), 
     \+(przyjazn(X, Z), Z =\= Y).
 
-
-true_love() :-
+true_love(X, Y) :-
     loves(X, Y), 
-    loves(Y, X), 
-    ((mezczyzna(X), kobieta(Y)); 
-    mezczyzna(Y), kobieta(X)).
+    loves(Y, X).
 ```
 # Zadanie 1.1
 A - x i y są rodzeństwem
 
 B - x i y są kuzynostwem
 
-C - x i y to wspólni dziadkowie danego wnuka
+C - x i y to wspólni dziadkowie (z obu stron) danego wnuka
 
 D - y jest przybranym rodzicem x
 
@@ -52,8 +46,67 @@ F - y jest szwagrem x
 G - x i y to rodzeństwo oraz x jest wujkiem/ciocią y
 
 # Zadanie 1.2
+```prolog
+dziecko(X,Y) :- 
+    rodzic(Y,X).
 
+rodzenstwo(X,Y) :-
+    rodzic(M,X),
+    rodzic(O,X),
+    rodzic(M,Y),
+    rodzic(O,Y),
+    M \= O,
+    X \= Y.
 
+dziadek_albo_babcia(X,Y) :-
+    rodzic(X,Z),
+    rodzic(Z,Y),
+    X \= Y,
+    X \= Z,
+    Y \= Z.
+
+kuzyn(X,Y) :-
+    rodzic(Z,X),
+    rodzic(W,Y),
+    Z \= W,
+    (dziadek_albo_babcia(D, Z), dziadek_albo_babcia(D, W)).
+
+%wnuk_albo_wnuczka(X,Y) :-
+%    dziadek_albo_babcia(Y,X).
+
+wspoldziadkowie(X, Y) :-
+    dziadek_albo_babcia(X,A),
+    dziadek_albo_babcia(Y,A).
+
+przybrane_rodzenstwo(X, Y) :-
+    rodzic(Z,X),
+    rodzic(Z,Y),
+    \+ (rodzic(W, X), rodzic(W,Y)),
+    B \= A.
+
+przybrany_rodzic(Y, X) :-
+    rodzic(W,X),
+    rodzic(W,Z),
+    rodzic(Y,Z),
+    \+rodzic(Y,X),
+    przybrane_rodzenstwo(X,Z).
+
+szwagier(Y,X) :- 
+    rodzic(X,A),
+    rodzic(W,A),
+    rodzic(Z,W),
+    rodzic(Z,Y),
+    W \= A.
+
+wujek_i_brat_jednoczesnie(X,Y) :- % lub jednoczesna ciocia i siostra
+    rodzic(A,X),
+    rodzic(B,X),
+    A \= B,
+    rodzic(A,Z),
+    rodzic(Z,Y),
+    rodzic(B,Y).
+
+```
 # Zadanie 2
 ```prolog
 osoba(bartek).
