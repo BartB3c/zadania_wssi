@@ -83,17 +83,17 @@ babcia(X,Y) :-
   matka(X,Z), 
   rodzic(Z,Y).
 
-wnuczka(X, Y) :- 
+wnuczka(X,Y) :- 
   kobieta(Y), 
   (dziadek(Y,X) ; babcia(Y,X)).
 
-przodek_do2pokolenia_wstecz(X, Y) :- 
-  rodzic(X,A),
-  rodzic(A,Y).
+przodek_do2pokolenia_wstecz(X,Y) :- 
+  rodzic(X,Y) ; 
+  (dziadek(X,Y), babcia(X,Y)).
   
-przodek_do3pokolenia_wstecz(X, Y) :- 
-  rodzic(X,Z),
-  przodek_do2pokolenia_wstecz(Z,Y).
+przodek_do3pokolenia_wstecz(X,Y) :- 
+  przodek_do2pokolenia_wstecz(Z,Y),
+  rodzic(X,Z).
   
 
 
