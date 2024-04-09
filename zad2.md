@@ -41,7 +41,7 @@ A - x i y są rodzeństwem
 
 B - x i y są kuzynostwem
 
-C - x i y to wspólni dziadkowie
+C - x i y to wspólni dziadkowie danego wnuka
 
 D - y jest przybranym rodzicem x
 
@@ -87,69 +87,70 @@ rodzic(zofia, mirek).
 rodzic(bozena, aneta).
 rodzic(bozena, iwona).
 
+
 kobieta(X) :- 
   osoba(X), 
   /+mezczyzna(X).
 
-ojciec(X,Y) :- 
+ojciec(X,Y) :- % X jest ojcem Y
   mezczyzna(X), 
   rodzic(X,Y).
 
-matka(X,Y) :- 
+matka(X,Y) :- % X jest matką Y
   kobieta(X), 
   rodzic(X,Y).
   
-corka(X,Y) :- 
+corka(X,Y) :- % X jest córką Y
   kobieta(X), 
   rodzic(Y,X).
 
-brat_rodzony(X,Y) :- 
+brat_rodzony(X,Y) :- % X jest rodzonym bratem Y
   mezczyzna(X), 
   (ojciec(Z,X), ojciec(Z,Y)),
   (matka(W,X), matka(W,Y)).
 
-brat_przyrodni(X,Y) :- 
+brat_przyrodni(X,Y) :- % X jest przyrodnim bratem Y
   mezczyzna(X), 
     (
     	((matka(W,X), matka(W,Y)),	(ojciec(Z,X), \+ojciec(Z,Y)));
     	((matka(W,X), \+matka(W,Y)),	(ojciec(Z,X), ojciec(Z,Y)))
     ).
     
-kuzyn(X,Y) :- 
+kuzyn(X,Y) :- % X jest kuzynem Y
   mezczyzna(X), 
   rodzic(Z,X), 
   rodzic(W,Y), 
   (rodzic(A,W), rodzic(A,Z)).
 
-dziadek_od_strony_ojca(X,Y) :- 
+dziadek_od_strony_ojca(X,Y) :- % X jest dziadkiem od strony ojca dla Y
   mezczyzna(X),
   ojciec(X,Z), 
   ojciec(Z,Y).
 
-dziadek_od_strony_matki(X,Y) :- 
+dziadek_od_strony_matki(X,Y) :- % X jest dziadkiem od strony matki dla Y
   mezczyzna(X),
   ojciec(X,Z), 
   matka(Z,Y).
 
-dziadek(X,Y) :- 
+dziadek(X,Y) :- % X jest dziadkiem Y
   mezczyzna(X),
   ojciec(X,Z), 
   rodzic(Z,Y).
 
-babcia(X,Y) :- 
+babcia(X,Y) :- % X jest babcią Y
   kobieta(X),
   matka(X,Z), 
   rodzic(Z,Y).
 
-wnuczka(X,Y) :- 
+wnuczka(X,Y) :- % Y jest wnuczką X
   kobieta(Y), 
   (dziadek(Y,X) ; babcia(Y,X)).
 
-przodek_do2pokolenia_wstecz(X,Y) :- 
+przodek_do2pokolenia_wstecz(X,Y) :- % X jest przodkiem Y do drugiego pokolenia wstecz
   rodzic(X,Y) ; 
   (dziadek(X,Y), babcia(X,Y)).
   
-przodek_do3pokolenia_wstecz(X,Y) :- 
+przodek_do3pokolenia_wstecz(X,Y) :- % X jest przodkiem Y do trzeciego pokolenia wstecz
   przodek_do2pokolenia_wstecz(Z,Y),
   rodzic(X,Z).
 ```
