@@ -88,25 +88,20 @@ class DecisionTree:
         ps = hist / len(y)
         return -np.sum([p * np.log(p) for p in ps if p>0])
 
-
-    def _most_common_label(self, y):
-        counter = Counter(y)
-        value = counter.most_common(1)[0][0]
-        return value
-
-    def predict(self, X):
-        return np.array([self._traverse_tree(x, self.root) for x in X])
-
-    def _traverse_tree(self, x, node):
+     def _traverse_tree(self, x, node):
         if node.is_leaf_node():
             return node.value
 
         if x[node.feature] <= node.threshold:
             return self._traverse_tree(x, node.left)
         return self._traverse_tree(x, node.right)
-```
+
+    def predict(self, X):
+        return np.array([self._traverse_tree(x, self.root) for x in X])
 
 
-
-
+    def _most_common_label(self, y):
+        counter = Counter(y)
+        value = counter.most_common(1)[0][0]
+        return value
 ```
